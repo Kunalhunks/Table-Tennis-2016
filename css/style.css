@@ -501,7 +501,7 @@ border: 2px solid #fff;
 	margin:0 auto;
 }
 .team-leader-box{
-	width:25%;
+	width:22%;
 	margin-right: 3.82979%;
 	height: 490px;
 	overflow: hidden;
@@ -512,7 +512,7 @@ border: 2px solid #fff;
 	margin-bottom:24px;
 	display:block;
 }
-.team-leader-box:nth-of-type(3n+0){ margin:0;}
+.team-leader-box:nth-of-type(3n+1){ margin:0;}
 .team-leader{
 	width:auto;
 	height:auto;
@@ -577,9 +577,11 @@ border: 2px solid #fff;
 	-moz-transition:all 0.3s ease-in-out;
 	-webkit-transition:all 0.3s ease-in-out;
 }
+.team-leader ul li h3{
+	color: #fff !important;
+}
 .team-leader ul li a:hover, .team-leader ul li a:focus{
 	text-decoration:none;
-	color:#fff;
 }
 .team-leader ul li a.fa-twitter:hover{
 	color:#55acee;
