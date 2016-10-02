@@ -399,12 +399,29 @@ we were well fed and drunk all the time!</p>
 </section><!--main-section team-end-->
 
 
+<div id="map" style="width:100%;height:200px"></div>
 
-<section class="business-talking"><!--business-talking-start-->
-	<div class="container">
-        <h2>Let’s Talk Business.</h2>
-    </div>
-</section><!--business-talking-end-->
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(28.676488, 77.501936), 
+    zoom: 15,
+    scrollwheel: false,
+    draggable: false,
+  }
+  var marker = new google.maps.Marker({
+    position: new google.maps.LatLng(28.676488, 77.501936),
+    map: map,
+    title: 'Snazzy!'
+  });
+
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
 <div class="container">
 <section class="main-section contact" id="contact">
 	
@@ -412,7 +429,9 @@ we were well fed and drunk all the time!</p>
         	<div class="col-lg-6 col-sm-7 wow fadeInLeft">
             	<div class="contact-info-box address clearfix">
                 	<h3><i class=" icon-map-marker"></i>Address:</h3>
-                	<span>308 Negra Arroyo Lane<br>Albuquerque, New Mexico, 87111.</span>
+                	<span>Ajay Kumar Garg Engineering College,
+                        <br>27th Km milestone NH-24 Delhi-Hapur Bypass,
+                        <br>Adhyatmik Nagar Ghaziabad, Uttar Pradesh - 201009.</span>
                 </div>
                 <div class="contact-info-box phone clearfix">
                 	<h3><i class="fa-phone"></i>Phone:</h3>
