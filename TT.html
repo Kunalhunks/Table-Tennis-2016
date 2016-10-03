@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> TT </title>
+ 	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/external.css">
+  </head>
+  <body style="margin:0;">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<div class="container-fluid">
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Table Tennis Tournament</a>
+    </div>
+      <div class="collapse navbar-collapse navbar-right" id="Navbar">
+    <ul class="nav navbar-nav">
+      <li class="active "><a href="#">About</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle"  data-toggle="dropdown" href="#">Event Details
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu ">
+          <li><a href="#">Eligibility</a></li>
+          <li><a href="#">Last Date</a></li>
+          <li><a href="#">Prizes</a></li>
+          <li><a href="#">Schedule</a></li>
+          <li><a href="#">Entry Fees</a></li>
+          <li><a href="#">Notes</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Organising Committee</a></li>
+      <li><a href="#">Reach Us</a></li>
+    </ul>
+   </div>
+  </div>
+</nav>
+		<img src="./assets/bg.svg">
+
+  <button type="button" class="btn" data-toggle="modal" data-target="#RegModal">Register</button>
+
+  <div class="modal fade" id="RegModal" role="dialog">
+
+    <div class="modal-dialog">
+      <div class="modal-content" style="padding: 40px;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title">Register</h3>
+        </div>
+        <div class="modal-body">
+
+<form class="form-horizontal">
+  <div class="form-group">
+    <label class="control-label col-sm-3" for="name">Name:</label>
+    <div class="col-sm-9">
+      <input type="name" class="form-control" id="name" placeholder="Enter Name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-3" for="dob">Date of Birth:</label>
+    <div class="col-sm-9">
+      <input type="date" class="form-control" id="dob" placeholder="Enter Date">
+    </div>
+  </div>
+
+  <div class="form-group">
+     <label class="control-label col-sm-3">Gender:</label>
+       <div class="col-sm-2"> <label class="radio-inline">
+      <input type="radio" name="gender">Male
+    </label></div>
+
+    <div class="col-sm-2">
+    <label class="radio-inline">
+      <input type="radio" name="gender">Female
+    </label></div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-3" for="inst">Institution:</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" id="inst" placeholder="Name of Institution">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-3" for="add">Address:</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" id="add" placeholder="Permanent Address">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-3" for="contact">Contact No:</label>
+    <div class="col-sm-9">
+      <input type="number" class="form-control" id="contact" placeholder="Enter Contact No.">
+    </div>
+  </div>
+   <div class="form-group">
+    <label class="control-label col-sm-3" for="mail">Email ID:</label>
+    <div class="col-sm-9">
+      <input type="email" class="form-control" id="mail" placeholder="Enter Email">
+    </div>
+  </div>
+  <div class="form-group">
+     <label class="control-label col-sm-3">Accomodation Required:</label>
+       <div class="col-sm-2"> <label class="radio-inline">
+      <input type="radio" name="acc">Yes
+    </label></div>
+
+    <div class="col-sm-2">
+    <label class="radio-inline">
+      <input type="radio" name="acc">No
+    </label></div>
+  </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success btn-block btn-lg"> <span class="glyphicon glyphicon-download"></span> Register</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<div class="container">
+
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-8" style="background-color: #1dd0ad; padding-top: 4vh;">
+  <table class="table table-bordered table-hover text-center v-center">
+     <thead>
+       <tr style="font-size: 2.1vmin;">
+         <th>Position</th>
+         <th>Men Team</th>
+         <th>Women Team</th>
+         <th>Men</th>
+         <th>Women</th>
+         <th>Youth Boys</th>
+         <th>Youth Girls</th>
+         <th>Boys (under-18)</th>
+         <th>Girls (under-18)</th>
+         <th>Masters Men</th>
+         <th>Masters Women</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td>1</td>
+         <td>4200</td>
+         <td>2400</td>
+         <td>2500</td>
+         <td>1500</td>
+         <td>1800</td>
+         <td>1200</td>
+         <td>1200</td>
+         <td>1000</td>
+         <td>1500</td>
+         <td>1000</td>
+       </tr>
+       <tr>
+         <td>2</td>
+         <td>3600</td>
+         <td>2100</td>
+         <td>2000</td>
+         <td>1200</td>
+         <td>1500</td>
+         <td>900</td>
+         <td>900</td>
+         <td>800</td>
+         <td>1200</td>
+         <td>800</td>
+       </tr>
+       <tr>
+         <td>3</td>
+         <td>3000</td>
+         <td>1800</td>
+         <td>1500</td>
+         <td>900</td>
+         <td>1200</td>
+         <td>700</td>
+         <td>700</td>
+         <td>600</td>
+         <td>1000</td>
+         <td>600</td>
+       </tr>
+       <tr>
+         <td>4</td>
+         <td>--</td>
+         <td>--</td>
+         <td>1000</td>
+         <td>600</td>
+         <td>900</td>
+         <td>500</td>
+         <td>500</td>
+         <td>400</td>
+         <td>800</td>
+         <td>--</td>
+       </tr>
+     </tbody>
+   </table>
+
+ </div>
+
+</div>
+
+</div>
+
+<br/>
+
+<div class="container">
+
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-8" style="background-color: #1dd0ad; padding-top: 4vh;">
+  <table class="table table-bordered table-hover text-center v-center">
+     <thead>
+       <tr style="font-size: 2.1vmin;">
+         <th>S.No.</th>
+         <th>Team</th>
+         <th>Age</th>
+         <th>Criteria</th>
+         <th>Entry Fees (in Rs.)</th>
+       </tr>
+     </thead>
+     <tbody >
+       <tr>
+         <td>1</td>
+         <td>Men Team</td>
+         <td>--</td>
+         <td>--</td>
+         <td>500.00</td>
+       </tr>
+       <tr>
+         <td>2</td>
+         <td>Women Team</td>
+         <td>--</td>
+         <td>--</td>
+         <td>500.00</td>
+       </tr>
+       <tr>
+         <td>3</td>
+         <td>Men</td>
+         <td>--</td>
+         <td>--</td>
+         <td>250.00</td>
+       </tr>
+       <tr>
+         <td>4</td>
+         <td>Women</td>
+         <td>--</td>
+         <td>--</td>
+         <td>250.00</td>
+       </tr>
+       <tr>
+         <td>5</td>
+         <td>Youth Boys</td>
+         <td>Under 21 years</td>
+         <td>Born on or after January 1, 1996</td>
+         <td>250.00</td>
+       </tr>
+       <tr>
+         <td>6</td>
+         <td>Youth Girls</td>
+         <td>Under 21 years</td>
+         <td>Born on or after January 1, 1996</td>
+         <td>250.00</td>
+       </tr>
+       <tr>
+         <td>7</td>
+         <td>Boys</td>
+         <td>Under 18 years</td>
+         <td>Born on or after January 1, 1999</td>
+         <td>250.00</td>
+       </tr>
+       <tr>
+         <td>8</td>
+         <td>Girls</td>
+         <td>Under 18 years</td>
+         <td>Born on or after January 1, 1999</td>
+         <td>250.00</td>
+       </tr>
+       <tr>
+         <td>9</td>
+         <td>Masters (men)</td>
+         <td>Over 40 years</td>
+         <td>Born on or after January 1, 1976</td>
+         <td>250.00</td>
+       </tr>
+       <tr>
+         <td>10</td>
+         <td>Masters (women)</td>
+         <td>Over 40 years</td>
+         <td>Born on or after January 1, 1976</td>
+         <td>250.00</td>
+       </tr>
+     </tbody>
+   </table>
+
+ </div>
+
+</div>
+
+</div>
+
+<br/>
+
+<div class="container">
+
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-8" style="padding-top: 4vh;">
+  <table class="table table-condensed text-center v-center">
+     <tbody >
+       <tr>
+         <td>November 27, 2016</td>
+         <td>09:00 AM</td>
+         <td>Team Championship (Men and Women) and individual events- boys and youth boys</td>
+       </tr>
+       <tr>
+         <td></td>
+         <td>11:00 AM</td>
+         <td>Individual events- Women, girls, youth girls</td>
+       </tr>
+       <tr>
+         <td></td>
+         <td>02:30 PM</td>
+         <td>Individual events- Mens</td>
+       </tr>
+       <tr>
+         <td>November 28, 2016</td>
+         <td>09:00 AM</td>
+         <td>Rest of the matches of first day and masters (men and women)</td>
+       </tr>
+       <tr>
+         <td></td>
+         <td>04:30 PM</td>
+         <td>Finals</td>
+       </tr>
+     </tbody>
+   </table>
+
+ </div>
+
+</div>
+
+</div>
+
+<br/>
+
+	</div>
+
+
+
+
+
+
+  </body>
+</html>

@@ -247,6 +247,11 @@ color: #fff;
 	background:#fafafa;
 }
 
+.about{
+	text-align: justify;
+	margin:1% 6%;
+}
+
 /* Featured Work
 ---------------------------------*/
 .featured-work{
@@ -491,7 +496,9 @@ border: 2px solid #fff;
 .main-section.team h6{
 	margin-bottom:40px;
 }
-
+.main-section.about h2{
+	margin-bottom:40px;
+}
 
 /* Team
 ---------------------------------*/
