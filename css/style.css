@@ -259,10 +259,11 @@ color: #fff;
 }
 .featured-work h2{
 	text-align:left;
+	margin-bottom:5%;
 }
 .featured-box{
 	padding:0 0 0 0;
-	margin-bottom:25px;
+	margin-bottom:15px;
 	font-size:14px;
 }
 .featured-box h3{
@@ -498,6 +499,26 @@ border: 2px solid #fff;
 }
 .main-section.about h2{
 	margin-bottom:40px;
+}
+.prizes{
+	font-size: 34px;
+color: #222;
+font-family: "Montserrat",sans-serif;
+font-weight: 700;
+letter-spacing: -1px;
+margin: 0px 0px 15px;
+text-align: center;
+text-transform: uppercase;
+}
+.schedule{
+		font-size: 34px;
+color: #222;
+font-family: "Montserrat",sans-serif;
+font-weight: 700;
+letter-spacing: -1px;
+margin: 0px 0px 15px;
+text-align: center;
+text-transform: uppercase;
 }
 
 /* Team
@@ -803,6 +824,11 @@ border: 2px solid #fff;
 
 /* Animation Timers
 ---------------------------------*/
+.delay-02s { 
+	animation-delay: 0.1s; 
+	-webkit-animation-delay: 0.1s; 
+}
+
 .delay-02s { 
 	animation-delay: 0.2s; 
 	-webkit-animation-delay: 0.2s; 
