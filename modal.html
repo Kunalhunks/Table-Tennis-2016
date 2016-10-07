@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"> 
+  <title> TT </title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/external.css">
+</head>
+<body style="margin:0;">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<div class="container-fluid">
+
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Navbar" style="">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Table Tennis Tournament</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-right" id="Navbar">
+        <ul class="nav navbar-nav">
+          <li class="active "><a href="#">About</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle"  data-toggle="dropdown" href="#">Event Details
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu ">
+                <li><a href="#">Eligibility</a></li>
+                <li><a href="#">Last Date</a></li>
+                <li><a href="#">Prizes</a></li> 
+                <li><a href="#">Schedule</a></li> 
+                <li><a href="#">Entry Fees</a></li> 
+                <li><a href="#">Notes</a></li> 
+              </ul>
+            </li>
+            <li><a href="#">Organising Committee</a></li> 
+            <li><a href="#">Reach Us</a></li> 
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <img src="./assets/bg.svg">
+
+    <button type="button" class="btn" data-toggle="modal" data-target="#RegModal" style="margin-top:10%;">Register</button>
+
+    <div class="modal fade" id="RegModal" role="dialog">
+
+      <div class="modal-dialog">  
+        <div class="modal-content" style="padding: 40px;">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3 class="modal-title">Register</h3>
+          </div>
+          <form class="form-horizontal">
+          <div class="modal-body">
+
+
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="name">Name:</label>
+                <div class="col-sm-9">
+                  <input type="name" class="form-control" id="name" placeholder="Enter Name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="dob">Date of Birth:</label>
+                <div class="col-sm-9"> 
+                  <input type="date" class="form-control" id="dob" placeholder="Enter Date">
+                </div>
+              </div>
+
+              <div class="form-group">
+               <label class="control-label col-sm-3">Gender:</label>
+               <div class="col-sm-2"> <label class="radio-inline">
+                <input type="radio" name="gender">Male
+              </label></div>
+
+              <div class="col-sm-2"> 
+                <label class="radio-inline">
+                  <input type="radio" name="gender">Female
+                </label></div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="inst">Institution:</label>
+                <div class="col-sm-9"> 
+                  <input type="text" class="form-control" id="inst" placeholder="Name of Institution">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="add">Address:</label>
+                <div class="col-sm-9"> 
+                  <input type="text" class="form-control" id="add" placeholder="Permanent Address">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="contact">Contact No:</label>
+                <div class="col-sm-9"> 
+                  <input type="number" class="form-control" id="contact" placeholder="Enter Contact No.">
+                </div>
+              </div> 
+              <div class="form-group">
+                <label class="control-label col-sm-3" for="mail">Email ID:</label>
+                <div class="col-sm-9"> 
+                  <input type="email" class="form-control" id="mail" placeholder="Enter Email">
+                </div>
+              </div>
+              <div class="form-group">
+                 <label class="control-label col-sm-3">Accomodation Required:</label>
+                 <div class="col-sm-2"> <label class="radio-inline">
+                  <input type="radio" name="acc">Yes
+                </label></div>
+
+                <div class="col-sm-2"> 
+                  <label class="radio-inline">
+                    <input type="radio" name="acc">No
+                  </label></div>
+              </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success btn-block btn-lg"> <span class="glyphicon glyphicon-download"></span> Register</button>
+          </div>
+          </form>
+
+
+
+        </div>
+      </div>
+    </div>
+  </body>
+  </html>
